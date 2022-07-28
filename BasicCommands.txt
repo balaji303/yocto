@@ -1,0 +1,35 @@
+Copy/Paste Aid for Introduction to Toaster:
+
+GIT POKY (command line)-  git clone git://git.yoctoproject.org/poky -b dunfell
+
+INSTALL TOASTER (command line) -  sudo apt-get install python3-pip
+		-  cd poky
+		-  pip3 install -r bitbake/toaster-requirements.txt
+		
+ESTABLISH PATH (command line) -  export PATH=”~/.local/bin:$PATH”
+
+START TOASTER (command line) -  source oe-init-build-env  -OR-  . oe-init-build-env
+		-  source toaster start
+
+WEB BROWSER TO TOASTER -  http://127.0.0.1:8000 -OR- http://localhost:8000
+
+ADDING LAYERS -  meta-aws
+		 meta-networking
+		 meta-webserver
+		 meta-python
+		 meta-initramfs
+		 meta-multimedia
+		 
+BITBAKE VARIABLES -    IMAGES_FSTYPES = wic or wic.gz  recommended
+			PACKAGE_CLASSES = package_ipk
+		The following require that you add both the Variable (in caps) and the Value (in lower case)
+			SDK_MACHINE = x86_64
+			LICENSE_FLAGS_WHITELIST = commercial
+			INHERIT = rm_work
+			
+STOPPING TOASTER (command line) -  source toaster stop
+
+FOR MORE INFORMATION (web links) - 	https://docs.yoctoproject.org/2.5/mega-manual/mega-manual.html
+					https://www.linux4sam.org/bin/view/Linux4SAM
+					https://www.yoctoproject.org/
+					https://www.microchip.com/en-us/education/technical-learning-center
