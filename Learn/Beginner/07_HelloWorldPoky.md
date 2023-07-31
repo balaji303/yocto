@@ -26,7 +26,7 @@
 
     - Beacuse *$PATH* does not has been set
 
-    - run source oe-init-built-env ../../build
+    - run ``` source oe-init-built-env ../../build ```
 
     - Once the setup is done successfully, if you give *$PATH* it lists the path of yocto related contents also.
 
