@@ -14,3 +14,4 @@ OUTPUT
 - Bootloader,
 - Root file system,
 - Device Tree
+
