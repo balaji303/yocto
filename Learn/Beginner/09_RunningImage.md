@@ -23,3 +23,15 @@
 
 1. Do bitbake and generate the image again.
 
+1. Sato image is the X11 windows system based image with a SATO theme and a GNOME mobile desktop environment 
+
+        bitbake core-image-sato
+        runqemu qemuarm core-image-sato
+
+1. Challenge
+
+    - Generate a image for qemumips => MIPS
+    - bitbake and also run
+    - Try Graphics mode
+    - Try No Graphics mode
+    - Sato mode
